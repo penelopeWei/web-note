@@ -26,10 +26,11 @@
 >>>>	JSON HiJacking
 >>>>>		构造自定义的回调函数
 >>>>>		http://www.b.com/csrf.html
->>>>>		<script>
->>>>>		    function hijack(data){console.log(data)};
->>>>>		</script>
->>>>>		<script src='http://www.a.com/json?callback=hijack'>
+```		<script>
+		    function hijack(data){console.log(data)};
+		</script>
+		<script src='http://www.a.com/json?callback=hijack 
+		```
 >>>>	 Flash CSRF
 >>>>>		通过 Flash 来实现跨域请求
 >>>>>		import flash.net.URLRequest;
@@ -40,9 +41,9 @@
 >>>>>		};
 
 >>>> CSRF 的防御方法
-	通过验证码进行防御
-	检查请求来源
-	增加请求参数 token
+>>>>>	通过验证码进行防御
+>>>>>	检查请求来源
+>>>>>	增加请求参数 token
 
 
 
